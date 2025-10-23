@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOSSOM | Flower Collection</title>
+    <style>
+        /* 🌸 BASIC RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #fff0f6, #ffe6f0, #f9f0ff);
+            color: #333;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        /* 🌺 NAVBAR */
+        nav {
+            background: #c2265a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        nav .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffebf0;
+        }
+
+        /* 🌷 HEADER */
+        header {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #e91e63;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            font-style: italic;
+            color: #ad1457;
+            margin-bottom: 25px;
+        }
+
+        header p {
+            color: #ad1457;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            letter-spacing: 0.5px;
+        }
+
+        /* 🌹 CARD CONTAINER */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 40px 20px;
+        }
+
+        /* 🌸 INDIVIDUAL CARD */
+        .flower-card {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            width: 270px;
+            transition: transform 0.4s, box-shadow 0.4s;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .flower-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .flower-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .flower-card .content {
+            padding: 15px;
+        }
+
+        .flower-card h3 {
+            color: #e91e63;
+            margin-bottom: 10px;
+        }
+
+        .flower-card p {
+            color: #555;
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+
+        /* 🌺 BUTTON */
+        #btn {
+            display: block;
+            margin: 30px auto 10px;
+            background: #e91e63;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        #btn:hover {
+            background: #ad1457;
+        }
+
+        #quote {
+            margin-top: 45px;
+            font-style: italic;
+            color: #d81b60;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #777;
+            font-size: 0.9em;
+            padding-bottom: 30px;
+        }
+
+        /* 📱 RESPONSIVE DESIGN */
+        @media (max-width: 1024px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .flower-card {
+                width: 90%;
+            }
+
+            header {
+                padding: 60px 20px 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 🌸 NAVBAR -->
+    <nav>
+        <div class="logo">🌸 BLOSSOM</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#roses">Roses</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 🌷 HEADER -->
+    <header>
+        <h1>BLOSSOM</h1>
+        <h2>🌹 Beautiful Flower Collection 🌹</h2>
+        <p>Flowers are nature’s most beautiful creations, symbolizing love, joy, and life.
+        <br>They bring color and fragrance to our world, making every place feel more alive and peaceful.
+        <br>Each flower has its own meaning and charm, from the elegance of roses to the brightness of sunflowers.
+        <br>Beyond beauty, flowers also play a vital role in nature’s balance, helping plants reproduce and supporting pollinators like bees and butterflies.</p>
+    </header>
+
+    <!-- 🌹 FLOWER CARDS -->
+    <div class="card-container">
+        <!-- Red Rose -->
+        <div class="flower-card">
+            <img src="./img/images (1).jfif" alt="Red Rose">
+            <div class="content">
+                <h3>Red Rose</h3>
+                <p>Symbol of love and passion. Red roses are timeless classics expressing deep affection.</p>
+            </div>
+        </div>
+
+        <!-- White Rose -->
+        <div class="flower-card">
+            <img src="./img/download.jfif" alt="White Rose">
+            <div class="content">
+                <h3>White Rose</h3>
+                <p>Represents purity and innocence. White roses are often used in weddings and ceremonies.</p>
+            </div>
+        </div>
+
+        <!-- Pink Rose -->
+        <div class="flower-card">
+            <img src="./img/OIP.jfif" alt="Pink Rose">
+            <div class="content">
+                <h3>Pink Rose</h3>
+                <p>Sign of grace, elegance, and sweetness. Pink roses express admiration and joy.</p>
+            </div>
+        </div>
+
+        <!-- Yellow Rose -->
+        <div class="flower-card">
+            <img src="./img/download (1).jfif" alt="Yellow Rose">
+            <div class="content">
+                <h3>Yellow Rose</h3>
+                <p>Symbolizes friendship and happiness. Yellow roses bring warmth and cheerfulness.</p>
+            </div>
+        </div>
+
+        <!-- Black Rose -->
+        <div class="flower-card">
+            <img src="./img/images.jfif" alt="Black Rose">
+            <div class="content">
+                <h3>Black Rose</h3>
+                <p>Mysterious and rare. Black roses represent new beginnings or major change.</p>
+            </div>
+        </div>
+
+        <!-- Sun Flower -->
+        <div class="flower-card">
+            <img src="./img/download (2).jfif" alt="Sun Flower">
+            <div class="content">
+                <h3>Sun Flower</h3>
+                <p>Symbol of positivity, loyalty & happiness. It always turns toward the sun, representing hope, warmth, and energy.</p>
+            </div>
+        </div>
+
+        <!-- Lavender -->
+        <div class="flower-card">
+            <img src="./img/download (3).jfif" alt="Lavender">
+            <div class="content">
+                <h3>Lavender</h3>
+                <p>Symbol of calmness, purity, and grace. Its soothing fragrance is known to reduce stress and promote relaxation.</p>
+            </div>
+        </div>
+
+        <!-- Daffodils -->
+        <div class="flower-card">
+            <img src="./img/download (4).jfif" alt="Daffodils">
+            <div class="content">
+                <h3>Daffodils</h3>
+                <p>Symbol of new beginnings, hope, and rebirth. They are often given as a sign of friendship and joy.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🌼 QUOTE BUTTON -->
+    <button id="btn">🌼 Show Random Rose Quote</button>
+    <p id="quote"></p>
+
+    <footer>🌸 Designed with Love by <b>Blossom</b> © 2025</footer>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const quote = document.getElementById("quote");
+
+        const quotes = [
+            "A rose speaks of love silently, in a language known only to the heart.",
+            "The rose is a symbol of balance – beauty and thorns coexist.",
+            "Every rose has its thorn, but that's what makes it real.",
+            "Smell the roses while you can.",
+            "The fragrance always stays in the hand that gives the rose."
+        ];
+
+        btn.addEventListener("click", () => {
+            const random = Math.floor(Math.random() * quotes.length);
+            quote.textContent = quotes[random];
+        });
+    </script>
+
+</body>
+</html>
